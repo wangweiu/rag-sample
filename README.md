@@ -1,9 +1,10 @@
-RAG sample
+## RAG sample
 
-User can ask questions related to the sample contract document using current project. 
+This is a sample project demonstrate build a RAG service with a client UI built by VUE. User can ask questions related to the sample contract document using current project. 
+
 TODO: Based on this sample, your can extend this project to a knowledge base by loading more PDF documents.
 
-This is a sample RAG project built with 
+The RAG project is built with 
 - VUE
 - Python
 - Django Rest Framework
@@ -11,6 +12,7 @@ This is a sample RAG project built with
 - Langchain
 - Zhipu AI
 
+## Deployment Guide
 
 1. install Python
 2. Create a Python virtual envrinoment.

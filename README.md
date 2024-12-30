@@ -42,21 +42,21 @@ https://blog.csdn.net/m0_52424297/article/details/140796305<br>
 docker compose up -d
 docker compose down
 ```
-1. Install Attu(Optional)
+5. Install Attu(Optional)
 Attu is a client tool allow you view data in Milvus. Download the installer package from the "Assets" section.
 https://github.com/zilliztech/attu/releases/
 
-1. Add Zhipu AI token
+6. Add Zhipu AI token
    6.1 Get token from https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys
    6.2 Search "ZHIPUAI_API_KEY" in code and input the Zhipu AI token. There should be 2 places need the token.
-2. Load Data into Milvus
+7. Load Data into Milvus
 ```
 cd src
 python3 LoadPDF.py
 ```
 Open Attu and connnect to Milvus. You should be able to see a "Contact" collection
 
-1. Start Django rest framework
+8. Start Django rest framework
 ```
 cd server/restapi
 python3 manage.py runserver

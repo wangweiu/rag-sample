@@ -16,7 +16,7 @@ loader = PyPDFLoader(file_path=file_path)
  # 将pdf中的文档解析为 langchain 的document对象
 documents = loader.load()
  # 将文档拆分为合适的大小
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=150, chunk_overlap=20)
 docs = text_splitter.split_documents(documents)
 
 # 初始化 embedding model

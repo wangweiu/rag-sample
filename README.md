@@ -43,14 +43,17 @@ docker compose down
 Attu is a client tool allow you view data in Milvus. Download the installer package from the "Assets" section.
 https://github.com/zilliztech/attu/releases/
 
-6. Load Data into Milvus
+6. Add Zhipu AI token
+   6.1 Get token from https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys
+   6.2 Search "ZHIPUAI_API_KEY" in code and input the Zhipu AI token. There should be 2 places need the token.
+7. Load Data into Milvus
 ```
 cd src
 python3 LoadPDF.py
 ```
 Open Attu and connnect to Milvus. You should be able to see a "Contact" collection
 
-7. Start Django rest framework
+8. Start Django rest framework
 ```
 cd server/restapi
 python3 manage.py runserver
@@ -65,7 +68,7 @@ Open http://localhost:8000/api/chat/ and send a POST with content
 ```
 The response looks like "The total purchase price is $20,000.00."
 
-8. Start VUE App
+9. Start VUE App
 ```
 cd /client
 npm install

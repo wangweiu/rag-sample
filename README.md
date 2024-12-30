@@ -31,31 +31,32 @@ pip install django djangorestframework django-cors-headers
 ```
 
 4. Install Milvus standalone
-4.1 Create a 'Milvus" folder with following subfolders. /conf /db /logs /pic /volumes /wal
+
+4.1 Create a 'Milvus" folder with following subfolders. /conf /db /logs /pic /volumes /wal <br>
 4.2 Get milvus-standalone-docker-compose.yml
-from https://github.com/milvus-io/milvus/releases  (v2.4.14 or later)
+from https://github.com/milvus-io/milvus/releases  (v2.4.14 or later)<br>
 4.3 Rename the milvus-standalone-docker-compose.yml to docker-compose.yml and put it in /Milvus
-https://blog.csdn.net/m0_52424297/article/details/140796305
+https://blog.csdn.net/m0_52424297/article/details/140796305<br>
 4.4 Start/Stop Milvus
 ```
 docker compose up -d
 docker compose down
 ```
-5. Install Attu(Optional)
+1. Install Attu(Optional)
 Attu is a client tool allow you view data in Milvus. Download the installer package from the "Assets" section.
 https://github.com/zilliztech/attu/releases/
 
-6. Add Zhipu AI token
+1. Add Zhipu AI token
    6.1 Get token from https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys
    6.2 Search "ZHIPUAI_API_KEY" in code and input the Zhipu AI token. There should be 2 places need the token.
-7. Load Data into Milvus
+2. Load Data into Milvus
 ```
 cd src
 python3 LoadPDF.py
 ```
 Open Attu and connnect to Milvus. You should be able to see a "Contact" collection
 
-8. Start Django rest framework
+1. Start Django rest framework
 ```
 cd server/restapi
 python3 manage.py runserver

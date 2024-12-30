@@ -35,13 +35,14 @@ pip install django djangorestframework django-cors-headers
 4.1 Create a 'Milvus" folder with following subfolders. /conf /db /logs /pic /volumes /wal <br>
 4.2 Get milvus-standalone-docker-compose.yml
 from https://github.com/milvus-io/milvus/releases  (v2.4.14 or later)<br>
-4.3 Rename the milvus-standalone-docker-compose.yml to docker-compose.yml and put it in /Milvus
-https://blog.csdn.net/m0_52424297/article/details/140796305<br>
+4.3 Rename the milvus-standalone-docker-compose.yml to docker-compose.yml and put it in /Milvus<br>
 4.4 Start/Stop Milvus
 ```
 docker compose up -d
 docker compose down
 ```
+Reference: https://blog.csdn.net/m0_52424297/article/details/140796305
+
 5. Install Attu(Optional)
 Attu is a client tool allow you view data in Milvus. Download the installer package from the "Assets" section.
 https://github.com/zilliztech/attu/releases/
